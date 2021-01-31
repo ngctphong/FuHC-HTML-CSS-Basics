@@ -1,0 +1,145 @@
+body {
+	margin: 10px;
+}
+
+/* Basic Selectors */
+
+/* a[href^='https'][href$='.com'] {
+	color: bisque;
+} */
+
+/* ******************************************************* */
+
+/* Relational Selectors */
+
+/* Second element is a descendant of the first element */
+/* #products p {
+	color: aqua;
+} */
+
+/* Second element is a direct child of first element */
+/* #products > p {
+	color: aqua;
+} */
+
+/* Elements share the same parent 
+Second element comes immediately after first element */
+/* #products + p {
+	color: aqua;
+} */
+
+/* Elements share the same parent 
+Second element comes after first element */
+/* #products ~ p {
+  color: aqua;
+} */
+
+/* ******************************************************* */
+
+/* Pseudo class */
+
+/* article :first-child {
+  font-size: 140%;
+  font-style: italic;
+} */
+
+/* article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
+} */
+
+/* article p:last-child {
+  font-weight: bold;
+} */
+
+/* article :last-of-type {
+  font-weight: bold;
+} */
+
+/* ul :nth-child(odd) { */
+/* ul :nth-child(3n) {
+  color: brown;
+}
+
+a:visited, 
+a:link {
+  color: tomato;
+}
+
+a:hover, a:focus {
+  color: blueviolet;
+} */
+
+/* ******************************************************* */
+
+/* Pseudo element */
+/* .pseudo-element p::first-letter {
+  font-weight: bold;
+}
+
+.pseudo-element p::first-line {
+  font-style: italic;
+}
+
+::selection {
+  background-color: yellow;
+}
+
+.pseudo-element p::before {
+  content: '... ';
+  display: block;
+}
+
+.pseudo-element p::after {
+  content: '...';
+  display: block;
+} */
+
+/* Selectors specificity */
+
+/* h1 {
+  color: dodgerblue;
+}
+
+.highlight {
+  color: deeppink;
+}
+
+#products {
+  color: green;
+}
+
+.highlight#products {
+  color: darkblue;
+} */
+
+/* Inheritance */
+
+/* p {
+  color: dodgerblue;
+  border: 1px solid black;
+}
+
+strong {
+  color: initial;
+  border: inherit;
+} */
+
+/* Colors - Gradients - Borders - Shadows */
+.box {
+	width: 200px;
+	height: 200px;
+	/* background-color: rgba(230, 205, 16, 0.5); */
+	/* background-color: #e6cc10; */
+	/* background-color: hsla(53, 100%, 40%, .5); */
+	/* background: linear-gradient(to bottom right, dodgerblue, yellow); */
+	background: radial-gradient(circle at top left, white, yellow);
+	border: 5px solid black;
+	border-radius: 50%;
+	box-shadow: 0 0 30px grey;
+}
+
+h1 {
+	color: white;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}

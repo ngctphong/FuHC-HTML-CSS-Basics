@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="HTML, CSS" />
+		<meta name="description" content="Hello my friends" />
+		<title>HTML Basics</title>
+		<style>
+			.images-lesson {
+				width: 200px;
+				height: 200px;
+				object-fit: cover;
+			}
+
+			.videos-lesson {
+				width: 400px;
+				display: block;
+			}
+
+			.lists-lesson {
+				list-style-type: none;
+			}
+
+			.tables-lesson,
+			td,
+			th {
+				border: 1px solid grey;
+				border-collapse: collapse;
+			}
+
+			.tables-lesson tfoot {
+				text-align: left;
+			}
+
+			.containers-lesson {
+				background-color: gold;
+				width: 300px;
+			}
+
+			.containers-lesson .highlight {
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Heading -->
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+
+		<!-- Entities -->
+		<p>&lt;HTML&gt;</p>
+		<p>&copy;</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolor!
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt odit
+			distinctio repellendus atque perspiciatis fuga&nbsp;iutsfs Magnam eligendi
+			ea laboriosam.
+		</p>
+
+		<!-- Hyperlinks -->
+		<a href="./about.html" target="_blank">About</a>
+		<a href="./images/microsoft.png" download>Microsoft Photo</a>
+		<a href="#raw">Raw</a>
+		<a href="https://google.com" target="_blank">Google</a>
+		<a href="mailto://phongnguyenhust@gmail.com">Email Me</a>
+
+		<h2 id="raw">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, debitis.
+		</h2>
+
+		<!-- Images -->
+		<img src="images/coffee.jpeg" alt="Coffee" class="images-lesson" />
+
+		<!-- Videos & Audio -->
+		<video controls autoplay loop src="videos/ocean.mp4" class="videos-lesson">
+			Your browser doesn't support videos
+		</video>
+		<audio
+			controls
+			autoplay
+			src="audio/audio.mp3"
+			class="videos-lesson"
+		></audio>
+
+		<!-- Lists -->
+		<ul class="lists-lesson">
+			<li>About me</li>
+			<li>
+				Courses
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ul>
+			</li>
+			<li>Subscribe</li>
+			<li>Contact me</li>
+		</ul>
+
+		<ol>
+			<li>Preheat the oven</li>
+			<li>Place the ingredients on the crust</li>
+			<li>Put the pizza in the oven for 20 minutes</li>
+		</ol>
+
+		<dl>
+			<dt>HTML</dt>
+			<dd>Hypertext Markup Language</dd>
+			<dt>CSS</dt>
+			<dd>Cascading Stylesheets</dd>
+		</dl>
+
+		<!-- Tables -->
+		<table class="tables-lesson">
+			<thead>
+				<tr>
+					<th colspan="2">Expenses</th>
+				</tr>
+				<tr>
+					<th>Category</th>
+					<th>Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Marketing</td>
+					<td>$300</td>
+				</tr>
+				<tr>
+					<td>Accounting</td>
+					<td>$200</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Total</th>
+					<th>$500</th>
+				</tr>
+			</tfoot>
+		</table>
+
+		<!-- Containers -->
+		<div class="containers-lesson">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+				voluptatem ex. Non officia fuga hic voluptatum aut ut dolore ducimus!
+			</p>
+			<a href="#">Link</a>
+		</div>
+		<div class="containers-lesson">
+			<p>
+				<span class="highlight">Lorem</span> ipsum dolor sit amet consectetur
+				adipisicing elit. Aliquid, voluptatem ex. Non officia fuga hic
+				voluptatum aut ut dolore ducimus!
+			</p>
+			<a href="#">Link</a>
+		</div>
+
+		<!-- Semantics -->
+		<article class="article">
+			<h1>Heading</h1>
+			<p>Published <time datetime="2021-01-01 17:00">January 1 2021 05:00pm</time></p>
+			<p>
+				<mark>Lorem</mark> ipsum dolor sit amet, consectetur adipisicing elit.
+				Hic inventore, tempora temporibus corporis natus fugit excepturi
+				similique minima pariatur ut?
+			</p>
+		</article>
+		<figure>
+			<img src="./images/microsoft.png" alt="Microsoft" />
+			<figcaption>Microsoft Azure</figcaption>
+		</figure>
+
+		<!-- Structuring Web Page -->
+		<header>
+			<nav>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>Product</h2>
+				<article></article>
+			</section>
+			<section>
+				<h2>Testimonial</h2>
+				<article>
+					<section></section>
+					<section></section>
+					<section></section>
+				</article>
+				<article></article>
+			</section>
+		</main>
+		<aside></aside>
+		<footer></footer>
+
+		<hr />
+
+		<!-- Practice -->
+		<h1>Heading</h1>
+		<h2>HTML</h2>
+		<p>HTML tutorial</p>
+		<h3>Code</h3>
+		<h3>Exercise</h3>
+		<h2>CSS</h2>
+		<p>CSS tutorial</p>
+		<p>I love to learn <em>HTML</em></p>
+	</body>
+</html>
