@@ -1,0 +1,35 @@
+/* CSS Variables */
+:root {
+  --color-primary: #ffdd36;
+  --border-size: 2px;
+  --border-radius: 10px;
+}
+
+.one {
+  width: 100px;
+  height: 100px;
+  background: var(--color-primary);
+}
+
+.two {
+  width: 100px;
+  height: 100px;
+  background: var(--color-primary);
+}
+
+/* OOP CSS */
+
+.btn {
+  border: 0;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-gold {
+  background: gold;
+}
+
+.btn-dodgerblue {
+  background: dodgerblue;
+}
