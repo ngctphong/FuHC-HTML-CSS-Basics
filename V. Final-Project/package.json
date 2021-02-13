@@ -1,0 +1,12 @@
+{
+  "name": "Final-Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
+  }
+}
